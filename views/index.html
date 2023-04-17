@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Sistema de Control de Farmacia</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/uploads/settings/<?=$fevicon?>">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/admin/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/vendors/css/forms/icheck/icheck.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/vendors/css/forms/icheck/custom.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/vendors/css/ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/vendors/css/forms/selects/select2.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/components.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/core/menu/menu-types/horizontal-menu.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/core/colors/palette-gradient.css">
+    <!-- END: Page CSS-->
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="horizontal-layout horizontal-menu 2-columns  " data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow navbar-static-top navbar-light navbar-brand-center">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item"><a class="navbar-brand" href="#"><img class="brand-logo" alt="modern admin logo" src="../assets/uploads/settings/logo-597.png">
+                            <h3 class="brand-text">Sistema de Control de Farmacia</h3>
+                        </a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                        <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+                            <div class="search-input">
+                                <input class="input" type="text" placeholder="Explorar...">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                       <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">Admin</span><span class="avatar avatar-online">
+                 
+                        <img src="../assets/uploads/avatar/70520.png" alt="avatar"><i></i>
+                                     
+                        </span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="ft-user"></i> Editar Perfila</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="ft-power"></i> Salir</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-dark navbar-without-dd-arrow navbar-shadow" role="navigation" data-menu="menu-wrapper">
+        <div class="navbar-container main-menu-content" data-menu="menu-container">
+            <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item"><a class="dropdown-toggle nav-link" href="#"><i class="la la-home"></i><span>Escritorio</span></a>
+                </li>
+                <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i class="la la-medkit"></i><span>Medicinas</span></a>
+                    <ul class="dropdown-menu">
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-edit"></i><span>Manage</span></a>
+                        </li>
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-archive"></i><span>Out Stock</span></a>
+                        </li>
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-exclamation-circle"></i><span>Expired</span></a>
+                        </li>
+                    </ul>
+                </li>
+              
+                </li>
+                <li class="nav-item"><a class="dropdown-toggle nav-link" href="#"><i class="la la-truck"></i><span>Proveedores</span></a>
+                </li>
+                <li class="nav-item"><a class="dropdown-toggle nav-link" href="#"><i class="la la-users"></i><span>Clientes</span></a>
+                </li>
+                 <li class="nav-item"><a class="dropdown-toggle nav-link" href="#"><i class="la la-rupee"></i><span>Ventas</span></a>
+                </li>
+                <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="" data-toggle="dropdown"><i class="la la-medkit"></i><span>Reportes</span></a>
+                    <ul class="dropdown-menu">
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-edit"></i><span>Sales Report</span></a>
+                        </li>
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-archive"></i><span>Purchase Report</span></a>
+                        </li>
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-group"></i><span>Customer Report</span></a>
+                        </li>
+                        <li data-menu=""><a class="dropdown-item" href="#" data-toggle=""><i class="la la-exclamation-circle"></i><span>Purchase Expiry Report</span></a>
+                        </li>
+                    </ul>
+                </li>
+  				<li class="nav-item"><a class="dropdown-toggle nav-link" href="#"><i class="la la-user-plus"></i><span>Usuarios</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+     <div class="app-content content">
+     <div class="logo_empresa" align="center" style="margin-top: 10px;">
+      <a href="#sale_report"  data-toggle="modal" data-target=""><img style="width: 25%;" src="../assets/uploads/settings/logo-597.png"></a>
+      <br><br><br>
+     	<button class="btn btn-primary" >Contactanos</button>
+     	<button class="btn btn-primary" >Servicios</button>
+     	<button class="btn btn-primary" >Catálogo</button>
+     </div>	
+     <div class="row" align="center">
+     </div>
+    <div class="modal fade bs-example-modal-lg" id="sale_report" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <h4>Hola este es una Version</h4>
+            <p>Interfaz básica con HTML, de la pantalla inicial de su proyecto.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- END: Main Menu-->
+<div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2023<a class="text-bold-800 grey darken-2" href="" ></a></span><span class="float-md-right d-none d-lg-block">DEVDESIGN <i class="ft-heart pink"></i><span id="scroll-top"></span></span></p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../assets/admin/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../assets/admin/vendors/js/ui/jquery.sticky.js"></script>
+    <script src="../assets/admin/vendors/js/charts/jquery.sparkline.min.js"></script>
+    <script src="../assets/admin/vendors/js/forms/icheck/icheck.min.js"></script>
+    <script src="../assets/admin/js/core/libraries/jquery_ui/jquery-ui.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <script src="../assets/admin/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <script src="../assets/admin/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+    <script src="../assets/admin/vendors/js/forms/toggle/switchery.min.js"></script>
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../assets/admin/js/core/app-menu.js"></script>
+    <script src="../assets/admin/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    
+
+<script>
+    window.setTimeout(function() {
+        $(".alert").fadeTo(400, 0).slideUp(400, function(){
+            $(this).remove(); 
+        });
+    }, 4000);
+</script>
+</body>
+<!-- END: Body-->
+
+</html>
